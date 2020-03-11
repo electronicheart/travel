@@ -36,9 +36,11 @@ export default {
       }
     }
   },
+  // 当使用keep-alive时，生命周期函数会增加两个钩子函数：activated和deactivated
   activated() {
     window.addEventListener('scroll', this.handleScroll)
   },
+  // 全局事件解绑
   deactivated() {
     window.removeEventListener('scroll', this.handleScroll)
   }
