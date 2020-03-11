@@ -47,7 +47,7 @@ export default {
       }
     }
   },
-  mounted() {
+  activated() {
     this.getDetailInfo()
   }
 }
